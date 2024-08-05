@@ -19,7 +19,7 @@ public class TodoController {
     public String addTodo(@RequestBody Todo myTodo)
     {
         todoList.add(myTodo);
-        return "todo added";
+        return "todo with id "  + myTodo.getTodoId() +  " myadded";
     }
 
 
